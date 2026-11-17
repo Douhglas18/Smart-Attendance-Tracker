@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard | Smart Attendance Tracker</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+<div class="app-layout">
+
+    <aside class="sidebar">
+
+        <div class="logo">Smart Attendance</div>
+
+        <div class="nav-label">Main Menu</div>
+
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-link active">Dashboard</a>
+            <a href="subjects.html" class="nav-link">Subjects</a>
+            <a href="attendance.html" class="nav-link">Attendance</a>
+            <a href="reports.html" class="nav-link">Reports</a>
+        </nav>
+
+    </aside>
+
+    <main class="main-content">
+
+        <header class="page-header">
+            <div>
+                <h1 class="page-title">Dashboard</h1>
+                <p class="page-description">
+                    Monitor your academic attendance.
+                </p>
+            </div>
+        </header>
+
+        <!-- Statistics -->
+
+        <section class="dashboard-grid">
+
+            <div class="card">
+                <h3>Total Subjects</h3>
+                <p class="stat-value" id="totalSubjects">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Overall Attendance</h3>
+                <p class="stat-value" id="overallAttendance">N/A</p>
+            </div>
+
+            <div class="card">
+                <h3>Classes Attended</h3>
+                <p class="stat-value" id="totalAttended">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Classes Missed</h3>
+                <p class="stat-value" id="totalMissed">0</p>
+            </div>
+
+        </section>
+
+        <!-- Subject Progress -->
+
+        <section class="card mt-20">
+
+            <h2 class="card-title">Subject-wise Attendance</h2>
+
+            <div id="subjectProgress">
+                <p class="text-muted">
+                    No attendance records available.
+                </p>
+            </div>
+
+        </section>
+
+        <!-- Warnings -->
+
+        <section class="card mt-20">
+
+            <h2 class="card-title">Attendance Alerts</h2>
+
+            <div id="attendanceAlerts">
+                <p class="text-muted">
+                    No attendance alerts.
+                </p>
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="js/storage.js"></script>
+<script src="js/dashboard.js"></script>
+
+</body>
+</html>
